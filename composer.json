@@ -1,0 +1,31 @@
+{
+  "name": "fromholdio/silverstripe-gridfield-refresh",
+  "type": "silverstripe-vendormodule",
+  "description": "Provides user and programmatic mechanisms to refresh grid fields",
+  "license": "BSD-3-Clause",
+  "keywords": ["silverstripe"],
+  "homepage": "https://github.com/fromholdio/silverstripe-gridfield-refresh",
+  "support": {
+    "issues": "https://github.com/fromholdio/silverstripe-gridfield-refresh/issues"
+  },
+  "authors": [{
+    "name": "Luke Fromhold",
+    "homepage": "https://fromhold.io"
+  }],
+  "require": {
+    "silverstripe/vendor-plugin": "^1.0",
+    "silverstripe/cms": "^4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fromholdio\\GridFieldRefresh\\": "src/"
+    }
+  },
+  "extra": {
+    "expose": [
+      "client"
+    ]
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}
