@@ -1,5 +1,7 @@
 # silverstripe-gridfield-refresh
 
+**Please use 1.x for Silverstripe 4. Silverstripe 5 compatibility is under construction in master branch.**
+
 Silverstripe module providing mechanism to refresh grid fields.
 
 - A button to add to grid fields, giving users the ability to refresh the grid field
