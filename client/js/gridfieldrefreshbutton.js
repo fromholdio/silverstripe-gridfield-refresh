@@ -12,15 +12,19 @@
                 var refreshButton = $(this).find(".gridfield-refresh-button");
                 if (typeof refreshButton !== 'undefined' && refreshButton !== null)
                 {
-                    var otherGridsToReload = $.parseJSON(refreshButton.attr('data-reloads'));
-                    if (typeof otherGridsToReload !== 'undefined' && otherGridsToReload !== null)
+                    var reloadAttr = refreshButton.attr('data-reloads');
+                    if (typeof reloadAttr !== 'undefined' && reloadAttr !== null)
                     {
-                        $.each(otherGridsToReload, function(i, gridName) {
-                            var otherGrid = $('.ss-gridfield[data-name="' + gridName + '"]');
-                            if (typeof otherGrid !== 'undefined' && otherGrid !== null) {
-                                otherGrid.reload();
-                            }
-                        });
+                        var otherGridsToReload = $.parseJSON(reloadAttr);
+                        if (typeof otherGridsToReload !== 'undefined' && otherGridsToReload !== null)
+                        {
+                            $.each(otherGridsToReload, function(i, gridName) {
+                                var otherGrid = $('.ss-gridfield[data-name="' + gridName + '"]');
+                                if (typeof otherGrid !== 'undefined' && otherGrid !== null) {
+                                    otherGrid.reload();
+                                }
+                            });
+                        }
                     }
                 }
             }
