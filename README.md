@@ -1,6 +1,6 @@
 # silverstripe-gridfield-refresh
 
-Requirements: Silverstripe ^4 or ^5.
+Requirements: Silverstripe 6.x.
 
 Silverstripe module providing mechanism to refresh grid fields.
 
